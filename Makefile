@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 RBENV_INIT := export PATH="/opt/homebrew/bin:$$HOME/.rbenv/shims:$$HOME/.rbenv/bin:$$PATH" && eval "$$(rbenv init -)" &&
 
-.PHONY: help serve build clean install test
+.PHONY: help serve build clean install test new-post
 
 help:
 	@echo "Comandos disponíveis:"
@@ -10,7 +10,11 @@ help:
 	@echo "  make clean     - Limpa arquivos temporários"
 	@echo "  make install   - Instala dependências"
 	@echo "  make test      - Testa o site"
+	@echo "  make new-post  - Cria um novo post guiado (PT-BR + EN)"
 	@echo "  make help      - Mostra esta ajuda"
+
+new-post:
+	@bash tools/new-post.sh
 
 serve:
 	@lsof -ti :4000 | xargs kill -9 2>/dev/null; true
