@@ -7,7 +7,7 @@ date: 2026-08-31 08:00:00 -0300
 categories: [Go, AI, Genkit]
 tags: [go, golang, genkit, ai, llm, rag, google, gemini, agents]
 comments: true
-image: "/assets/img/posts/2026-08-31-genkit-go-framework-ia.png"
+image: "/assets/img/posts/2026-09-02-genkit-go-framework-ia.png"
 lang: en
 original_post: "/genkit-go-framework-ia/"
 ---
